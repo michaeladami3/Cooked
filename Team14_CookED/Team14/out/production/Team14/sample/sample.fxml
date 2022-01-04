@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane id="signUp" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: orange;">
+         <children>
+            <Button id="signIn" fx:id="loginButton" layoutX="141.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Sign in" />
+            <Label layoutX="68.0" layoutY="122.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="70.0" layoutY="154.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="username" layoutX="141.0" layoutY="118.0" prefHeight="25.0" prefWidth="396.0" promptText="Username" />
+            <Label layoutX="238.0" layoutY="58.0" text="CookED">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font></Label>
+            <Label id="errormessage" fx:id="errormessage" layoutX="141.0" layoutY="175.0" textFill="#fe0303">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <PasswordField fx:id="pass" layoutX="141.0" layoutY="150.0" prefHeight="25.0" prefWidth="396.0" promptText="Password" />
+            <Button id="signUp" fx:id="signUpButton" layoutX="141.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Sign Up" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

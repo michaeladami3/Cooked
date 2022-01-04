@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoggedInPage">
+   <children>
+      <Button fx:id="button_logout" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" text="Log Out" />
+      <Label fx:id="welcomeMessage" layoutX="35.0" layoutY="14.0" text="Welcome Message">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="recipesL" layoutX="13.0" layoutY="308.0" text="Recipes:" />
+      <Label fx:id="friendsL" layoutX="14.0" layoutY="332.0" text="Friends:" />
+      <ListView fx:id="friendlist" layoutX="360.0" layoutY="14.0" prefHeight="296.0" prefWidth="231.0" />
+      <MenuButton layoutX="24.0" layoutY="68.0" mnemonicParsing="false" text="Food Culture">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Italian"/>
+          <MenuItem mnemonicParsing="false" text="Mexican"/>
+          <MenuItem mnemonicParsing="false" text="Japanese"/>
+          <MenuItem mnemonicParsing="false" text="Korean"/>
+          <MenuItem mnemonicParsing="false" text="Grecian"/>
+          <MenuItem mnemonicParsing="false" text="Indian"/>
+          <MenuItem mnemonicParsing="false" text="French"/>
+          <MenuItem mnemonicParsing="false" text="Chinese"/>
+        </items>
+      </MenuButton>
+      <ImageView fitHeight="206.0" fitWidth="249.0" layoutX="24.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@foodpics/cake.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
